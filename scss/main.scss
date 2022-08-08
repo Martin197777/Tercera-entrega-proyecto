@@ -1,0 +1,602 @@
+@import "_vars";
+@import "_fonts";
+@import "_mixins";
+@import "_nav";
+@import "_footer";
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+
+    background-color: map-get($map:$colores, $key:'black');
+    background-repeat: repeat;
+    overflow-x: hidden;
+
+}
+
+p {
+    font-family: $fontMain;
+    font-weight: $textRegular;
+}
+
+.text-h2 {
+    color: $white;
+    font-size: $textSm;
+    text-align: center;
+
+
+}
+
+.pie__icono--p {
+    width: 40px;
+}
+
+.nav-show {
+
+    align-items: flex-start;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $mainColor;
+    width: $w-100;
+    height: auto;
+    padding: 5px 5px;
+    margin: 5px;
+    font-family: $fontMain;
+    color: $white;
+    align-items: center;
+    line-height: 30px;
+    font-size: $textSm;
+}
+
+.container-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "section"
+        "nav"
+        "header"
+        "main"
+        "footer";
+
+}
+
+.video--grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    justify-items: space-between;
+    align-items: center;
+    width: 100vw;
+    grid-template-areas:
+        "iframe"
+        "iframe"
+        "iframe"
+        "iframe"
+        "iframe"
+        "iframe";
+}
+
+#iframe {
+    grid-area: iframe;
+}
+
+.main__iframe--pos {
+    margin: 20px;
+}
+
+.horarios {
+    color: $white;
+
+    font-family: $fontMain;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.table-pos {
+    display: flex;
+    justify-content: space-between;
+    padding: auto;
+    margin: auto;
+}
+
+.table-font {
+    color: $white;
+    font-family: $fontMain;
+    font-size: 1.8em;
+}
+
+.main__articulo__dim {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: auto;
+    width: 75%;
+    padding: 5px 5px;
+    object-position: center;
+    margin: 5px 5px;
+
+
+}
+
+.label-text {
+    color: $white;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: $fontMain;
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+.img-h {
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.encabezado__titulos--textcenter {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    font-family: $fontMain;
+    font-size: 3rem;
+    font-weight: 200;
+    text-decoration: underline;
+}
+
+.main__parrafo--italic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: $fontSecondary;
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+.card-font {
+    font-family: $fontSecondary;
+    text-align: center;
+    background-color: map-get($map:$colores, $key:'transparent');
+    color: $white;
+    font-size: 2rem;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.card-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-family: $fontMain;
+    font-size: 4rem;
+    font-weight: $textBold;
+    padding-bottom: 10px;
+    text-align: center;
+    color: map-get($map:$colores, $key:'yellow');
+    ;
+}
+
+.card-size {
+    height: auto;
+}
+
+.card-bg {
+    background-color: map-get($map:$colores, $key:'black');
+    border-color: map-get($map:$colores, $key:'black');
+    border-radius: 5px;
+
+}
+
+.card-align {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.card_overlay-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: map-get($map:$colores, $key:'darkred');
+    font-family: $fontMain;
+    font-size: 2rem;
+    font-weight: $textBold;
+
+}
+
+.card_overlay-parrafo {
+    display: flex;
+    flex-direction: row;
+    color: map-get($map:$colores, $key:'darkred');
+    align-items: center;
+
+    font-family: $fontSecondary;
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+.acc-color {
+    background-color: rgba(16, 14, 14, 0.0);
+    font-family: $fontMain;
+    font-size: 1.2rem;
+    color: $white;
+    font-weight: 200;
+}
+
+.acc-btn {
+    background-color: rgba(16, 14, 14, 0.0);
+}
+
+
+.acc-h1 {
+    background-color: map-get($map:$colores, $key:'transparent');
+    font-family: $fontSecondary;
+    font-size: 1.8rem;
+    color: #F3EAEA;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.br-font {
+    font-family: $fontMain;
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 10px;
+    color: $white;
+
+}
+
+
+
+#section {
+    grid-area: section;
+}
+
+#nav {
+    grid-area: nav;
+}
+
+#header {
+    grid-area: header;
+}
+
+#main {
+    grid-area: main;
+}
+
+#footer {
+    grid-area: footer;
+
+}
+
+@keyframes animacion--main {
+    0% {
+        background-image: url(../img/fondo.webp)
+    }
+
+    25% {
+        background-image: url(../img/fondo1.webp)
+    }
+
+    50% {
+        background-image: url(../img/fondo2.webp)
+    }
+
+    75% {
+        background-image: url(../img/fondo3.webp)
+    }
+
+    100% {
+        background-image: url(../img/fondo.webp)
+    }
+}
+
+.animacion-main {
+
+    animation-name: animacion--main;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+
+}
+
+
+
+.pie__icon--sep {
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .container-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(10vh 20vh 40vh 20vh 10vh);
+        grid-template-areas:
+            "section section"
+            "nav nav"
+            "header header"
+            "main main"
+            "footer footer";
+
+    }
+
+    .main__articulo__dim {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .horarios {
+
+
+        font-size: 1.5rem;
+    }
+
+    .text-h2 {
+        font-size: $textMd;
+    }
+
+    .video--grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "iframe iframe"
+            "iframe iframe"
+            "iframe iframe";
+    }
+
+    nav {
+        color: map-get($map:$colores, $key:'white');
+        font-size: $textMd;
+        padding: 10px;
+        width: 100vw;
+
+        li {
+            ul {
+                li {
+                    font-size: $textMd;
+                }
+            }
+        }
+    }
+
+    .main__parrafo--italic {
+
+        font-size: 1.5rem;
+
+    }
+
+    .encabezado__titulos--textcenter {
+        font-size: 3rem;
+
+    }
+
+    .card_overlay-title {
+
+        font-size: 3rem;
+        font-weight: $textBold;
+
+    }
+
+    .card_overlay-parrafo {
+
+
+        font-size: 2rem;
+
+    }
+
+    .pie__icono--p {
+
+        width: 60px;
+    }
+
+    section {
+        justify-content: center;
+        align-items: center;
+        line-height: 30px;
+        font-size: $textSm;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "section section section"
+            "nav nav nav"
+            "header header header"
+            "main main main"
+            "footer footer footer";
+
+    }
+
+    .horarios {
+
+
+
+        font-size: 2rem;
+    }
+
+    .main__articulo__dim {
+        padding: 50px;
+        margin: 50px auto;
+    }
+
+    .label-text {
+
+
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+
+    .text-h2 {
+        font-size: 3.2rem;
+        font-weight: 600;
+        padding: 10px;
+    }
+
+    .video--grid {
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "iframe iframe"
+            "iframe iframe"
+            "iframe iframe";
+        justify-items: center;
+    }
+
+    nav {
+        margin: auto;
+        font-size: $textLg;
+        padding: 10px;
+        width: 97vw;
+
+        li {
+            ul {
+                li {
+                    font-size: $textLg;
+                }
+            }
+        }
+    }
+
+    .acc-color {
+        font-family: $fontMain;
+        font-size: 2rem;
+        color: $white;
+        font-weight: $textLight;
+        padding: auto;
+    }
+
+    .encabezado__titulos--textcenter {
+        font-size: 6rem;
+        font-weight: 300;
+        width: 100%;
+
+    }
+
+
+    .main__parrafo--italic {
+
+        font-size: 2rem;
+
+    }
+
+
+    .pie__icon--sep {
+        width: 100%;
+        margin: 0%;
+
+        flex-direction: row;
+
+    }
+
+
+
+
+
+    .card_overlay-title {
+
+        font-size: 6rem;
+        font-weight: $textBold;
+
+    }
+
+    .card_overlay-parrafo {
+
+        font-size: 4rem;
+        font-weight: $textBold;
+
+    }
+
+    .pie__icono--p {
+        width: 80px;
+    }
+
+
+}
+
+.gallery {
+    display: flex;
+    padding: 2px;
+    transition: .3s;
+
+    &:hover &__image {
+        filter: grayscale(1);
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+    }
+
+    &__link {
+        margin: 2px;
+        overflow: hidden;
+
+        &:hover {
+            .gallery__image {
+                filter: grayscale(0);
+            }
+
+            .gallery__caption {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__thumb {
+        position: relative;
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        transition: .3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 25px 15px 15px;
+        width: 100%;
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        color: map-get($map:$colores, $key:'white');
+        opacity: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255, 255, 0) 100%);
+        transition: .3s;
+    }
+}

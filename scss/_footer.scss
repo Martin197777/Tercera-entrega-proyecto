@@ -1,0 +1,15 @@
+footer {
+    background: map-get($map: $colores, $key: 'white');
+   
+    
+
+    p {
+        display: flex;
+        justify-content: space-evenly;
+        font-family: $fontMain;
+        font-size: $textLg;
+        text-align: center;
+        padding: 10px 0;
+        color: $black;
+    }
+}

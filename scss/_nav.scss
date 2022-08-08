@@ -1,0 +1,46 @@
+nav {
+    background-color: map-get($map:$colores, $key:'black');
+    padding: 5px;
+    margin: 5px;
+    font-family: $fontMain;
+    font-size: $textSm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: $white;
+
+    li {
+        ul {
+
+            li {
+                font-size: $textSm;
+            }
+
+        }
+
+    }
+
+    
+
+}
+.nav-animacion ul li a {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .5s;
+}
+
+nav ul li a:hover {
+    background-size: 100% 2px;
+}
+
+nav ul li ul li a:hover {
+    
+    background-image:linear-gradient(to bottom, (map-get($map:$colores, $key:'black')) 0%, (map-get($map:$colores, $key:'red')) 100%);
+    background-repeat:no-repeat;
+    background-size: 200% 100%; 
+    transition:background-size .5s, background-color .5s;
+    
+}

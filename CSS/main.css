@@ -1,0 +1,556 @@
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+.encabezado-fotos {
+  background-color: rgba(17, 16, 16, 0);
+}
+
+.texto-fotos {
+  color: #0b0010;
+  background-color: rgba(241, 235, 235, 0.2);
+  justify-content: center;
+}
+
+.imagen {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 40vw;
+  height: auto;
+}
+.imagen:hover {
+  box-shadow: 0 0 2px 1px #66FCF1;
+}
+
+.texto-parrafo {
+  color: #C5C6C7;
+}
+
+.btn-font {
+  font-family: "Paytone One";
+  font-size: 1.6rem;
+  font-weight: 100;
+  color: #0b0010;
+  border: none;
+  background: rgb(169, 174, 177);
+}
+.btn-font:hover {
+  background: rgb(231, 240, 245);
+  font-weight: 500;
+}
+
+.pie__icono--p {
+  width: 80px;
+}
+.pie__icono--p:hover {
+  width: 85px;
+}
+
+nav {
+  background-color: #0b0b0b;
+  padding: 5px;
+  margin: 5px;
+  font-family: "Paytone One";
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #C5C6C7;
+}
+nav li ul li {
+  font-size: 1rem;
+}
+
+.nav-animacion ul li a {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.5s;
+}
+
+nav ul li a:hover {
+  background-size: 100% 2px;
+}
+
+nav ul li ul li a:hover {
+  background-image: linear-gradient(to bottom, #0b0b0b 0%, #d80b28 100%);
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+  transition: background-size 0.5s, background-color 0.5s;
+}
+
+footer {
+  background: #f1f4f7;
+}
+footer p {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Paytone One";
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 10px 0;
+  color: #0b0010;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #0b0b0b;
+  background-repeat: repeat;
+  overflow-x: hidden;
+}
+
+p {
+  font-family: "Paytone One";
+  font-weight: 400;
+}
+
+.text-h2 {
+  color: #C5C6C7;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.pie__icono--p {
+  width: 40px;
+}
+
+.nav-show {
+  align-items: flex-start;
+}
+
+section {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(17, 16, 16, 0);
+  width: 100%;
+  height: auto;
+  padding: 5px 5px;
+  margin: 5px;
+  font-family: "Paytone One";
+  color: #C5C6C7;
+  align-items: center;
+  line-height: 30px;
+  font-size: 1rem;
+}
+
+.container-grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "section" "nav" "header" "main" "footer";
+}
+
+.video--grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  justify-items: space-between;
+  align-items: center;
+  width: 100vw;
+  grid-template-areas: "iframe" "iframe" "iframe" "iframe" "iframe" "iframe";
+}
+
+#iframe {
+  grid-area: iframe;
+}
+
+.main__iframe--pos {
+  margin: 20px;
+}
+
+.horarios {
+  color: #C5C6C7;
+  font-family: "Paytone One";
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.table-pos {
+  display: flex;
+  justify-content: space-between;
+  padding: auto;
+  margin: auto;
+}
+
+.table-font {
+  color: #C5C6C7;
+  font-family: "Paytone One";
+  font-size: 1.8em;
+}
+
+.main__articulo__dim {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: auto;
+  width: 75%;
+  padding: 5px 5px;
+  object-position: center;
+  margin: 5px 5px;
+}
+
+.label-text {
+  color: #C5C6C7;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Paytone One";
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+.img-h {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.encabezado__titulos--textcenter, .encabezado-fotos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #C5C6C7;
+  font-family: "Paytone One";
+  font-size: 3rem;
+  font-weight: 200;
+  text-decoration: underline;
+}
+
+.main__parrafo--italic, .texto-fotos, .texto-parrafo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway";
+  font-size: 1rem;
+  line-height: 30px;
+}
+
+.card-font {
+  font-family: "Raleway";
+  text-align: center;
+  background-color: rgba(8, 8, 8, 0);
+  color: #C5C6C7;
+  font-size: 2rem;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.card-img {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-family: "Paytone One";
+  font-size: 4rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #e2d207;
+}
+
+.card-size {
+  height: auto;
+}
+
+.card-bg {
+  background-color: #0b0b0b;
+  border-color: #0b0b0b;
+  border-radius: 5px;
+}
+
+.card-align {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.card_overlay-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #79031d;
+  font-family: "Paytone One";
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.card_overlay-parrafo {
+  display: flex;
+  flex-direction: row;
+  color: #79031d;
+  align-items: center;
+  font-family: "Raleway";
+  font-size: 1rem;
+  line-height: 30px;
+}
+
+.acc-color {
+  background-color: rgba(16, 14, 14, 0);
+  font-family: "Paytone One";
+  font-size: 1.2rem;
+  color: #C5C6C7;
+  font-weight: 200;
+}
+
+.acc-btn {
+  background-color: rgba(16, 14, 14, 0);
+}
+
+.acc-h1 {
+  background-color: rgba(8, 8, 8, 0);
+  font-family: "Raleway";
+  font-size: 1.8rem;
+  color: #F3EAEA;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.br-font {
+  font-family: "Paytone One";
+  font-size: 1.5rem;
+  margin: 10px;
+  padding: 10px;
+  color: #C5C6C7;
+}
+
+#section {
+  grid-area: section;
+}
+
+#nav {
+  grid-area: nav;
+}
+
+#header {
+  grid-area: header;
+}
+
+#main {
+  grid-area: main;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+@keyframes animacion--main {
+  0% {
+    background-image: url(../img/fondo.webp);
+  }
+  25% {
+    background-image: url(../img/fondo1.webp);
+  }
+  50% {
+    background-image: url(../img/fondo2.webp);
+  }
+  75% {
+    background-image: url(../img/fondo3.webp);
+  }
+  100% {
+    background-image: url(../img/fondo.webp);
+  }
+}
+.animacion-main {
+  animation-name: animacion--main;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.pie__icon--sep {
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .container-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10vh 20vh 40vh 20vh 10vh);
+    grid-template-areas: "section section" "nav nav" "header header" "main main" "footer footer";
+  }
+  .main__articulo__dim {
+    padding: 20px;
+    margin: 20px auto;
+  }
+  .horarios {
+    font-size: 1.5rem;
+  }
+  .text-h2 {
+    font-size: 1.5rem;
+  }
+  .video--grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "iframe iframe" "iframe iframe" "iframe iframe";
+  }
+  nav {
+    color: #f1f4f7;
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 100vw;
+  }
+  nav li ul li {
+    font-size: 1.5rem;
+  }
+  .main__parrafo--italic, .texto-fotos, .texto-parrafo {
+    font-size: 1.5rem;
+  }
+  .encabezado__titulos--textcenter, .encabezado-fotos {
+    font-size: 3rem;
+  }
+  .card_overlay-title {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .card_overlay-parrafo {
+    font-size: 2rem;
+  }
+  .pie__icono--p {
+    width: 60px;
+  }
+  section {
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .container-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "section section section" "nav nav nav" "header header header" "main main main" "footer footer footer";
+  }
+  .horarios {
+    font-size: 2rem;
+  }
+  .main__articulo__dim {
+    padding: 50px;
+    margin: 50px auto;
+  }
+  .label-text {
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+  .text-h2 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    padding: 10px;
+  }
+  .video--grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "iframe iframe" "iframe iframe" "iframe iframe";
+    justify-items: center;
+  }
+  nav {
+    margin: auto;
+    font-size: 2.2rem;
+    padding: 10px;
+    width: 97vw;
+  }
+  nav li ul li {
+    font-size: 2.2rem;
+  }
+  .acc-color {
+    font-family: "Paytone One";
+    font-size: 2rem;
+    color: #C5C6C7;
+    font-weight: 300;
+    padding: auto;
+  }
+  .encabezado__titulos--textcenter, .encabezado-fotos {
+    font-size: 6rem;
+    font-weight: 300;
+    width: 100%;
+  }
+  .main__parrafo--italic, .texto-fotos, .texto-parrafo {
+    font-size: 2rem;
+  }
+  .pie__icon--sep {
+    width: 100%;
+    margin: 0%;
+    flex-direction: row;
+  }
+  .card_overlay-title {
+    font-size: 6rem;
+    font-weight: 700;
+  }
+  .card_overlay-parrafo {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  .pie__icono--p {
+    width: 80px;
+  }
+}
+.gallery {
+  display: flex;
+  padding: 2px;
+  transition: 0.3s;
+}
+.gallery:hover .gallery__image {
+  filter: grayscale(1);
+}
+.gallery__column {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.gallery__link {
+  margin: 2px;
+  overflow: hidden;
+}
+.gallery__link:hover .gallery__image {
+  filter: grayscale(0);
+}
+.gallery__link:hover .gallery__caption {
+  opacity: 1;
+}
+.gallery__thumb {
+  position: relative;
+}
+.gallery__image {
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+}
+.gallery__image:hover {
+  transform: scale(1.1);
+}
+.gallery__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px 15px 15px;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: #f1f4f7;
+  opacity: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  transition: 0.3s;
+}
+
+/*# sourceMappingURL=main.css.map */
